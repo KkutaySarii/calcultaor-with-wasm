@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - WebAssembly</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="calculator-container">
+        <div class="result-box">
+            <p class="process" id="process"></p>
+            <p class="result" id="display">0</p>
+        </div>
+        <div class="key-box">
+            <div class="key-row">
+                <button onclick="clear()" class="default-key top-key" id="clear">AC</button>
+                <button class="default-key top-key" id="plus-minus"><i class="fa-solid fa-plus-minus"></i></button>
+                <button onclick="percent()" class="default-key top-key" id="percent"><i
+                        class="fa-solid fa-percent"></i></button>
+                <button onclick="divide()" class="default-key right-key" id="divide">
+                    <i class="fa-solid fa-divide"></i>
+                </button>
+            </div>
+            <div class="key-row">
+                <button class="default-key" id="seven">7</button>
+                <button class="default-key" id="eight">8</button>
+                <button class="default-key" id="nine">9</button>
+                <button onclick="multiply()" class="default-key right-key" id="multiply">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="key-row">
+                <button class="default-key" id="four">4</button>
+                <button class="default-key" id="five">5</button>
+                <button class="default-key" id="six">6</button>
+                <button onclick="subtract()" class="default-key right-key" id="subtract">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+            </div>
+            <div class="key-row">
+                <button class="default-key" id="one">1</button>
+                <button class="default-key" id="two">2</button>
+                <button class="default-key" id="three">3</button>
+                <button onclick="add()" class="default-key right-key" id="add">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="key-row">
+                <button class="default-key" id="calculator"><i class="fa-solid fa-calculator"></i></button>
+                <button class="default-key" id="zero">0</button>
+                <button class="default-key" id="comma">,</button>
+                <button onclick="calculate()" class="default-key right-key" id="calculate">
+                    <i class="fa-solid fa-equals"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
